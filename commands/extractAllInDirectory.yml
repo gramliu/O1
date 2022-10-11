@@ -1,0 +1,9 @@
+name: Extract all in directory
+description: Extract all zip archives in a directory into their own directories
+author: gramliu
+program: bash
+matches:
+  - extractAll
+  - extractAllInDirectory
+examples:
+  - ./extractAll submissions
