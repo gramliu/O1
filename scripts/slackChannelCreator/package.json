@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@slack/bolt": "^3.12.1",
+    "@slack/web-api": "^6.7.2",
+    "csv": "^6.2.0",
+    "dotenv": "^16.0.3"
+  }
+}
