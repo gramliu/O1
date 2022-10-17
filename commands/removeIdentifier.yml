@@ -1,0 +1,13 @@
+name: Remove .Zone.Identifier files
+description: Remove .Zone.Identifier files created by copying into WSL
+author: gramliu
+program: bash
+args:
+  dir:
+    description: "Directory to run in"
+    alias: d
+    required: true
+matches:
+  - removeIdentifier
+examples:
+  - removeIdentifier download

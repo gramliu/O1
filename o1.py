@@ -35,7 +35,7 @@ if cli_args.action == "list":
     print("="*20)
     for alias in commands:
         command = commands[alias]
-        print(alias, command["name"], sep="\t\t")
+        print(alias, command.name, sep="\t\t")
 elif cli_args.action == "run":
     # Execute the specified command
     command_name = cli_args.command
@@ -48,4 +48,4 @@ elif cli_args.action == "run":
     for cmd_arg in cmd_args:
         if cmd_arg.name in cli_args:
             arg_values.append(cli_args.__getattribute__(cmd_arg.name))
-    subprocess.run([command.program, command.source] + arg_values)
+    subprocess.run([command.program, f"scripts/{command.source}"] + arg_values)
