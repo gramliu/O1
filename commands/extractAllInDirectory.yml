@@ -2,8 +2,13 @@ name: Extract all in directory
 description: Extract all zip archives in a directory into their own directories
 author: gramliu
 program: bash
+args:
+  dir:
+    description: "Directory to run in"
+    alias: d
+    required: true
 matches:
   - extractAll
   - extractAllInDirectory
 examples:
-  - ./extractAll submissions
+  - extractAll submissions
