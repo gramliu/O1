@@ -3,7 +3,7 @@ import os
 from typing import Generic, List, Mapping, Optional, TypeVar, Union
 import yaml
 
-CMD_DIR = "./commands"
+CMD_DIR = os.path.realpath(os.path.dirname(__file__)) + "/../commands"
 
 ext_map = {
     "bash": "sh",
